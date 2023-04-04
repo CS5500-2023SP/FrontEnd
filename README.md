@@ -1,7 +1,14 @@
 # FrontEnd
 
+## Steps for local dev
+
+1. `npm install`
+2. `cd one-two-three`
+3. `npm start`
+
 ## IDE extension
-If you use VS Code as your IDE, I would recommend installing extension - Prettier 
+
+If you use VS Code as your IDE, I would recommend installing extension - Prettier
 Please Open VS Code --> Preference --> Extensions, search for "Prettier" and install it.
 
 ![image](https://user-images.githubusercontent.com/83547917/229648725-a21c25f4-c3f2-45eb-9a94-f1641b101d62.png)
