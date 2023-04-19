@@ -53,10 +53,13 @@ const Place = () => {
   };
 
   const chartData = [];
-  for (const [key, value] of Object.entries(places)) {
-    const pair = { place: key, times: value };
-    chartData.push(pair);
+  if (places) {
+    for (const [key, value] of Object.entries(places)) {
+      const pair = { place: key, times: value };
+      chartData.push(pair);
+    }
   }
+
   console.log(chartData);
 
   return (

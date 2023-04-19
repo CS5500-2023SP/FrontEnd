@@ -54,10 +54,13 @@ const Place = () => {
   };
 
   const chartData = [];
-  for (const [key, value] of Object.entries(places)) {
-    const pair = { place: key, times: value };
-    chartData.push(pair);
+  if (places) {
+    for (const [key, value] of Object.entries(places)) {
+      const pair = { place: key, minutes: value };
+      chartData.push(pair);
+    }
   }
+
   console.log(chartData);
 
   return (
@@ -67,7 +70,7 @@ const Place = () => {
         <label>
           User ID:
           <input
-            type='text'
+            type="text"
             value={userId}
             onChange={(e) => setUserId(e.target.value)}
           />
@@ -75,7 +78,7 @@ const Place = () => {
         <label>
           Start Date:
           <input
-            type='date'
+            type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
           />
@@ -83,15 +86,15 @@ const Place = () => {
         <label>
           Time Range:
           <input
-            type='number'
+            type="number"
             value={timeRange}
             onChange={(e) => setTimeRange(parseInt(e.target.value))}
           />
         </label>
-        <button type='submit'>Submit</button>
+        <button type="submit">Submit</button>
       </form>
       <div>
-        <h3>Visited Times Chart</h3>
+        <h3>Visited Duration Chart</h3>
         <BarChart
           width={1500}
           height={500}
@@ -103,18 +106,18 @@ const Place = () => {
             bottom: 80,
           }}
         >
-          <CartesianGrid strokeDasharray='3 3' />
+          <CartesianGrid strokeDasharray="3 3" />
           <XAxis
-            dataKey='place'
+            dataKey="place"
             interval={0}
             angle={-45}
-            textAnchor='end'
+            textAnchor="end"
             tick={{ fontSize: 10 }}
           />
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey='times' fill='#8884d8' />
+          <Bar dataKey="minutes" fill="#8884d8" />
         </BarChart>
       </div>
       {longestStayed && (
