@@ -1,7 +1,14 @@
-# FrontEnd
+# GroupProject
+CS5500-Seattle23Spring-GroupProject-Frontend
 
-## Steps for local dev
+Team: OneTwoThree
 
+Members: Xinyi Cheng, Jiayan Ma, Jianxun Wang
+
+This repo only contains source code for frontend service, for backend, please refer to [Service](https://github.com/CS5500-2023SP/GroupProject)
+
+# Steps for local dev
+After clone this repo, please using follow command to start the service locally.
 1. `npm install`
 2. `cd one-two-three`
 3. `npm start`
