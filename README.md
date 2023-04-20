@@ -7,6 +7,27 @@ Members: Xinyi Cheng, Jiayan Ma, Jianxun Wang
 
 This repo only contains source code for frontend service, for backend, please refer to [Service](https://github.com/CS5500-2023SP/GroupProject)
 
+# Live webpage
+The link for our project frontend home is `http://frontend-alb-1649033991.us-west-2.elb.amazonaws.com`
+
+## User Activities
+
+Link: `http://frontend-alb-1649033991.us-west-2.elb.amazonaws.com/activity`     
+
+![1681967350259](https://user-images.githubusercontent.com/83547917/233263920-8c338d1d-1ef9-43e4-937b-50230fdfba85.png)
+
+## User Longest Stay Place
+
+Link: `http://frontend-alb-1649033991.us-west-2.elb.amazonaws.com/stay`
+
+![1681967762743](https://user-images.githubusercontent.com/83547917/233264851-18808257-a931-4dcd-986b-d9e6846dd5dd.png)
+
+## User Most Visited Place
+
+Link: `http://frontend-alb-1649033991.us-west-2.elb.amazonaws.com/place`
+
+![1681967829914](https://user-images.githubusercontent.com/83547917/233265043-e161c83e-ba5f-42a1-895b-9a8789a2d00c.png)
+
 # Steps for local dev
 After clone this repo, please using follow command to start the service locally.
 1. `npm install`
